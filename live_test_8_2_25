@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:developer';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
     final age = _ageController.text;
     final salary = _salaryController.text;
 
-    print("Name: $name, Age: $age, Salary: $salary");
+    log("Name: $name, Age: $age, Salary: $salary");
   }
 
   @override
